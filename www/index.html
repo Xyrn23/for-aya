@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="pages/3dp.png" type="image/x-icon">
+
+    <title>FOR YOU ONLY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="text-container">
+      <div class="login">
+        <form action="" class="login__form">
+          <h1 class="login__title">Login</h1>
+
+          <div class="login__content">
+            <div class="login__box">
+              <i class="ri-lock-2-line login__icon"></i>
+
+              <div class="login__box-input">
+                <input
+                  type="password"
+                  required
+                  class="login__input"
+                  id="login-pass"
+                  placeholder=" "
+                />
+                <label for="login-pass" class="login__label">Password</label>
+                <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="login__button" id="login-button">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="gradient-bg">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur
+              in="SourceGraphic"
+              stdDeviation="10"
+              result="blur"
+            />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+              result="goo"
+            />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+      <div class="gradients-container">
+        <div class="g1"></div>
+        <div class="g2"></div>
+        <div class="g3"></div>
+        <div class="g4"></div>
+        <div class="g5"></div>
+        <div class="interactive"></div>
+      </div>
+    </div>
+
+<script src="js/pass.js"></script>
+  
+  </body>
+</html>
